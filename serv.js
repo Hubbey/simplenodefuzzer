@@ -7,7 +7,7 @@ var server = http.createServer(function (req, res) {   //create web server
 	var port = path.substring(1)
     	var loc = "https://127.0.0.1:" + port
         // set response header
-        res.writeHead(302, { 'Location': loc }); 
+        res.writeHead(302, { 'Location': 'file:///etc/passwd' }); 
         
         // set response content    
         res.write(path);
